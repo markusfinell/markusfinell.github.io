@@ -92,3 +92,8 @@
 	--font--serif: Times serif;
 	--font--mono: monospace;
 }
+
+/* Transitions */
+:root {
+	--transition: .2s ease-in-out;
+}

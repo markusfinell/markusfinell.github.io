@@ -40,6 +40,7 @@ styles:
   utilities:
     - aspect-ratio
     - font-size
+    - gap
     - padding
 
 # Build settings

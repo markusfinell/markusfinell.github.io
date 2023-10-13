@@ -1,5 +1,5 @@
 body {
-	border-block-start: 3px solid var(--color--blue);
+	border-block: 8px solid var(--color--blue);
 }
 
 figure {
@@ -10,7 +10,42 @@ figure img {
 	width: 100%;
 }
 
+a {
+	display: inline-block;
+	position: relative;
+	transition: color var(--transition);
+}
+
+a:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -.1em;
+	height: 100%;
+	width: 0;
+	transition: width var(--transition), background-color var(--transition);
+	background-color: transparent;
+	z-index: -1;
+}
+
+a:hover {
+	color: var(--color--white);
+}
+
+a:hover:before {
+	width: calc(100% + .2em);
+	background-color: var(--color--blue);
+}
+
 [role="link"] {
 	text-decoration: none;
 	color: inherit;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+main {
+	min-height: 100vh;
 }

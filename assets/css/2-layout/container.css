@@ -6,7 +6,7 @@
 }
 
 .container-sm {
-	--max-width: 640px;
+	--max-width: 60ch;
 }
 
 .container-lg {

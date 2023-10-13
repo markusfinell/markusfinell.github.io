@@ -6,17 +6,19 @@
 		<header>
 			<div class="container-lg flex between pd-b--sm">
 				<h1 class="fs--lg"><a href="/" role="link">{{ site.title }}</a></h1>
-				<nav>
+				<nav class="flex gap--md">
 					<a href="/">Home</a>
 					<a href="/blog/">Blog</a>
 				</nav>
 			</div>
 		</header>
-		<main>
-			{{ content }}
+		<main class="pd-b--3-xl">
+			<div class="container-sm">
+				{{ content }}
+			</div>
 		</main>
     <footer>
-      <div class="container-lg flex center pd-b--xl fs--sm">
+      <div class="container-lg flex center pd-b--sm fs--sm">
 				Made by Markus Finell
 			</div>
     </footer>

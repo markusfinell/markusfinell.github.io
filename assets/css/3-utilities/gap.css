@@ -1,0 +1,23 @@
+.gap--sm {
+	gap: var(--size--sm);
+}
+
+.gap--md {
+	gap: var(--size--md);
+}
+
+.gap--lg {
+	gap: var(--size--lg);
+}
+
+.gap--xl {
+	gap: var(--size--xl);
+}
+
+.gap--2-xl {
+	gap: var(--size--2-xl);
+}
+
+.gap--3-xl {
+	gap: var(--size--3-xl);
+}
