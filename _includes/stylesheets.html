@@ -1,0 +1,15 @@
+{% for style in site.styles.global %}
+	<link rel="stylesheet" href="/assets/css/1-global/{{ style }}.css" />
+{% endfor %}
+
+{% for style in site.styles.layout %}
+	<link rel="stylesheet" href="/assets/css/2-layout/{{ style }}.css" />
+{% endfor %}
+
+{% for style in site.styles.utilities %}
+	<link rel="stylesheet" href="/assets/css/3-utilities/{{ style }}.css" />
+{% endfor %}
+
+{% for style in site.styles.blocks %}
+	<link rel="stylesheet" href="/assets/css/4-blocks/{{ style }}.css" />
+{% endfor %}

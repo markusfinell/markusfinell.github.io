@@ -1,0 +1,23 @@
+.fs--sm {
+	font-size: var(--size--sm);
+}
+
+.fs--md {
+	font-size: var(--size--md);
+}
+
+.fs--lg {
+	font-size: var(--size--lg);
+}
+
+.fs--xl {
+	font-size: var(--size--xl);
+}
+
+.fs--2-xl {
+	font-size: var(--size--2-xl);
+}
+
+.fs--3-xl {
+	font-size: var(--size--3-xl);
+}

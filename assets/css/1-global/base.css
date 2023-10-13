@@ -1,0 +1,16 @@
+body {
+	border-block-start: 3px solid var(--color--blue);
+}
+
+figure {
+	margin-block: var(--size--md);
+}
+
+figure img {
+	width: 100%;
+}
+
+[role="link"] {
+	text-decoration: none;
+	color: inherit;
+}

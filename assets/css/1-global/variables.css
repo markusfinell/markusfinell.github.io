@@ -1,0 +1,94 @@
+/* Fluid scale config */
+:root {
+	--fluid-scale-min: 1.2;
+	--fluid-scale-max: 1.333;
+  --fluid-min-width: 320;
+  --fluid-max-width: 1680;
+  --container-min-width: 672;
+
+  --fluid-screen: min(calc(var(--fluid-max-width) * 1px), 100vw);
+  --fluid-bp: calc(
+    (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
+      (var(--fluid-max-width) - var(--fluid-min-width))
+  );
+}
+
+/* Font sizes */
+:root {
+  --size--xs--min: calc(var(--size--sm--min) / var(--fluid-scale-min));
+  --size--xs--max: calc(var(--size--sm--max) / var(--fluid-scale-max));
+
+  --size--sm--min: calc(var(--size--md--min) / var(--fluid-scale-min));
+  --size--sm--max: calc(var(--size--md--max) / var(--fluid-scale-max));
+
+  --size--md--min: 16;
+  --size--md--max: 24;
+
+  --size--lg--min: calc(var(--size--md--min) * var(--fluid-scale-min));
+  --size--lg--max: calc(var(--size--md--max) * var(--fluid-scale-max));
+
+  --size--xl--min: calc(var(--size--lg--min) * var(--fluid-scale-min));
+  --size--xl--max: calc(var(--size--lg--max) * var(--fluid-scale-max));
+
+  --size--2-xl--min: calc(var(--size--xl--min) * var(--fluid-scale-min));
+  --size--2-xl--max: calc(var(--size--xl--max) * var(--fluid-scale-max));
+
+  --size--3-xl--min: calc(var(--size--2-xl--min) * var(--fluid-scale-min));
+  --size--3-xl--max: calc(var(--size--2-xl--max) * var(--fluid-scale-max));
+
+  --size--xs: calc(((var(--size--xs--min) / 16) * 1rem) + (var(--size--xs--max) - var(--size--xs--min)) * var(--fluid-bp));
+  --size--sm: calc(((var(--size--sm--min) / 16) * 1rem) + (var(--size--sm--max) - var(--size--sm--min)) * var(--fluid-bp));
+  --size--md: calc(((var(--size--md--min) / 16) * 1rem) + (var(--size--md--max) - var(--size--md--min)) * var(--fluid-bp));
+  --size--lg: calc(((var(--size--lg--min) / 16) * 1rem) + (var(--size--lg--max) - var(--size--lg--min)) * var(--fluid-bp));
+  --size--xl: calc(((var(--size--xl--min) / 16) * 1rem) + (var(--size--xl--max) - var(--size--xl--min)) * var(--fluid-bp));
+  --size--2-xl: calc(((var(--size--2-xl--min) / 16) * 1rem) + (var(--size--2-xl--max) - var(--size--2-xl--min)) * var(--fluid-bp));
+  --size--3-xl: calc(((var(--size--3-xl--min) / 16) * 1rem) + (var(--size--3-xl--max) - var(--size--3-xl--min)) * var(--fluid-bp));
+}
+
+/* Spacing */
+:root {
+  --space--xs--min: 5;
+  --space--xs--max: 10;
+
+  --space--sm--min: 7;
+  --space--sm--max: 15;
+
+  --space--md--min: 9;
+  --space--md--max: 23;
+
+  --space--lg--min: 12;
+  --space--lg--max: 32;
+
+  --space--xl--min: 16;
+  --space--xl--max: 48;
+
+  --space--2-xl--min: 21;
+  --space--2-xl--max: 76;
+
+  --space--3-xl--min: 28;
+  --space--3-xl--max: 144;
+
+  --space--xs: calc(((var(--space--xs--min) / 16) * 1rem) + (var(--space--xs--max) - var(--space--xs--min)) * var(--fluid-bp));
+  --space--sm: calc(((var(--space--sm--min) / 16) * 1rem) + (var(--space--sm--max) - var(--space--sm--min)) * var(--fluid-bp));
+  --space--md: calc(((var(--space--md--min) / 16) * 1rem) + (var(--space--md--max) - var(--space--md--min)) * var(--fluid-bp));
+  --space--lg: calc(((var(--space--lg--min) / 16) * 1rem) + (var(--space--lg--max) - var(--space--lg--min)) * var(--fluid-bp));
+  --space--xl: calc(((var(--space--xl--min) / 16) * 1rem) + (var(--space--xl--max) - var(--space--xl--min)) * var(--fluid-bp));
+  --space--2-xl: calc(((var(--space--2-xl--min) / 16) * 1rem) + (var(--space--2-xl--max) - var(--space--2-xl--min)) * var(--fluid-bp));
+  --space--3-xl: calc(((var(--space--3-xl--min) / 16) * 1rem) + (var(--space--3-xl--max) - var(--space--3-xl--min)) * var(--fluid-bp));
+}
+
+/* Colors */
+:root {
+	/* Named colors */
+  --color--black: #000;
+  --color--white: #fff;
+  --color--blue: #002F6C;
+	--color--blue--rgb: 0, 47, 108;
+}
+
+/* Typography */
+:root {
+	--font--sans: Verdana, Arial, sans-serif;
+	--font--serif: Times serif;
+	--font--mono: monospace;
+}
