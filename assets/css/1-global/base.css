@@ -16,28 +16,12 @@ a {
 	transition: color var(--transition);
 }
 
-a:before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: -.1em;
-	height: 100%;
-	width: 0;
-	transition: width var(--transition), background-color var(--transition);
-	background-color: transparent;
-	z-index: -1;
-}
-
 a:hover {
-	color: var(--color--white);
+	color: var(--color--blue);
 }
 
-a:hover:before {
-	width: calc(100% + .2em);
-	background-color: var(--color--blue);
-}
-
-[role="link"] {
+[role="link"],
+[role="link"]:hover {
 	text-decoration: none;
 	color: inherit;
 }

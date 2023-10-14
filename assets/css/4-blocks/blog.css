@@ -1,0 +1,9 @@
+.blog {
+	margin-block-start: var(--size--md);
+	display: grid;
+	gap: var(--size--lg);
+}
+
+.blog__post-title {
+	font-weight: normal;
+}

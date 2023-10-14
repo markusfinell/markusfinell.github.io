@@ -42,6 +42,8 @@ styles:
     - font-size
     - gap
     - padding
+  blocks:
+    - blog
 
 # Build settings
 plugins:
