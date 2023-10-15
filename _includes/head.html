@@ -1,8 +1,26 @@
 <head>
 	<meta charset="utf-8">
-	<title>{{ site.title }}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+
+	<meta name="theme-color" content="#002F6C">
+
+	<meta name="description" content="{{ site.description }}">
+
+	<meta name="robots" content="index,follow">
+	<meta name="googlebot" content="index,follow">
+
+	<meta name="google" content="nositelinkssearchbox">
+
+	<meta name="generator" content="Jekyll">
+
+	<meta name="referrer" content="no-referrer">
+
+	<meta name="format-detection" content="telephone=no">
 
 	{% include stylesheets.html %}
 
 	{% include favicon.html %}
+
+	<title>{{ site.title }}</title>
 </head>
