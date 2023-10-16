@@ -1,5 +1,5 @@
 body {
-	border-block: 8px solid var(--color--blue);
+	border-block: .35em solid var(--color--blue);
 }
 
 figure {

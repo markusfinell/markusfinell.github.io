@@ -44,6 +44,7 @@ styles:
     - padding
   blocks:
     - blog
+    - code
 
 # Build settings
 plugins:

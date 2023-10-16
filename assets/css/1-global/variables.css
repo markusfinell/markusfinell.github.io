@@ -88,8 +88,8 @@
 
 /* Typography */
 :root {
-	--font--sans: Verdana, Arial, sans-serif;
-	--font--serif: Times serif;
+	--font--sans: "Trebuchet MS", Arial, sans-serif;
+	--font--serif: Times, serif;
 	--font--mono: monospace;
 }
 

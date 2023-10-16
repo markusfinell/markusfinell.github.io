@@ -1,0 +1,24 @@
+code {
+	font-family: var(--font--mono);
+	font-size: var(--size--sm);
+	line-height: 1.2;
+	display: block;
+}
+
+code.language-plaintext {
+	background-color: #ddd;
+	padding-inline: .2em;
+	display: inline-block;
+	font-size: inherit;
+}
+
+code .c1 {
+	color: #aaa;
+}
+
+pre.highlight {
+	background-color: var(--color--black);
+	color: var(--color--white);
+	padding: .5em;
+	overflow: auto;
+}

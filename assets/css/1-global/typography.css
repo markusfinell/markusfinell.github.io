@@ -11,3 +11,23 @@ header h1 {
 * + :is(h1, h2, h3, h4, p) {
 	margin-block-start: 1.5em;
 }
+
+:is(h1, h2, h3, h4) + * {
+	margin-block-start: 1em;
+}
+
+h1 {
+	font-size: var(--size--2-xl);
+}
+
+h2 {
+	font-size: var(--size--xl);
+}
+
+h3 {
+	font-size: var(--size--lg);
+}
+
+h4 {
+	font-size: var(--size--md);
+}
