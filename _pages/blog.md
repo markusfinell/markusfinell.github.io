@@ -1,9 +1,7 @@
 ---
-layout: default
+layout: page
 permalink: /blog/
 title: Blog
 ---
-
-# {{ page.title }}
 
 {% include blog.html %}

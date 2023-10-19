@@ -2,8 +2,11 @@ body {
 	border-block: .35em solid var(--color--blue);
 }
 
-figure {
-	margin-block: var(--size--md);
+body[data-transitions="disabled"],
+body[data-transitions="disabled"] *,
+body[data-transitions="disabled"] *:before,
+body[data-transitions="disabled"] *:after {
+	transition: none;
 }
 
 figure img {

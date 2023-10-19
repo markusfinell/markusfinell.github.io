@@ -1,0 +1,11 @@
+.flow > * + * {
+	margin-block-start: var(--size--lg);
+}
+
+.flow > * + :is(h1, h2, h3, h4) {
+	margin-block-start: var(--size--2-xl);
+}
+
+.flow > :is(h1, h2, h3, h4) + * {
+	margin-block-start: var(--size--sm);
+}

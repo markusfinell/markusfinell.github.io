@@ -12,13 +12,82 @@ code.language-plaintext {
 	font-size: inherit;
 }
 
-code .c1 {
-	color: #aaa;
+div.highlight {
+	padding: var(--size--lg);
+	background-color: var(--color--black);
 }
 
 pre.highlight {
-	background-color: var(--color--black);
+	margin: 0;
 	color: var(--color--white);
-	padding: .5em;
 	overflow: auto;
+}
+
+div.highlighter-rouge {
+	position: relative;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	width: min(100vw, 125%);
+}
+
+div.highlighter-rouge > button {
+	position: absolute;
+	top: .5em;
+	right: .5em;
+}
+
+.code-copied-alert {
+	position: absolute;
+	top: var(--size--xs);
+	left: var(--size--xs);
+	width: calc(100% - var(--size--xs) * 2);
+	height: calc(100% - var(--size--xs) * 2);
+	border-radius: 4px;
+	background-color: rgba(255,255,255,0.95);
+	color: var(--color--blue);
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+div.highlighter-rouge[data-copied="true"] .code-copied-alert {
+	display: flex;
+	animation: flash 2s ease-in-out forwards;
+}
+
+@keyframes flash {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.language-php .c1 {
+	color: #6A955B;
+}
+
+.language-php .k {
+	color: #549DD2;
+}
+
+.language-php .n,
+.language-php .nb,
+.language-php .nf {
+	color: #DDDCAF;
+}
+
+.language-php .nv {
+	color: #9CDCFB;
+}
+
+.language-php .s1 {
+	color: #CE927B;
 }

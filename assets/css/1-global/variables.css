@@ -3,8 +3,7 @@
 	--fluid-scale-min: 1.2;
 	--fluid-scale-max: 1.333;
   --fluid-min-width: 320;
-  --fluid-max-width: 1680;
-  --container-min-width: 672;
+  --fluid-max-width: 1920;
 
   --fluid-screen: min(calc(var(--fluid-max-width) * 1px), 100vw);
   --fluid-bp: calc(
@@ -89,7 +88,7 @@
 /* Typography */
 :root {
 	--font--sans: "Trebuchet MS", Arial, sans-serif;
-	--font--serif: Times, serif;
+	--font--serif: Georgia, Garamond, Times, serif;
 	--font--mono: monospace;
 }
 

@@ -1,0 +1,17 @@
+button,
+.button {
+	border: 1px solid var(--color--blue);
+	border-radius: 4px;
+	background-color: var(--color--white);
+	color: var(--color--blue);
+	padding: .25em 1em;
+	cursor: pointer;
+	transition: .2s ease-in-out;
+}
+
+button:hover,
+.button:hover {
+	color: var(--color--white);
+	background-color: var(--color--blue);
+	border: 1px solid var(--color--white);
+}

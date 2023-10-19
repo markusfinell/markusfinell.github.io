@@ -39,6 +39,7 @@ styles:
   layout:
     - container
     - flex
+    - flow
     - grid
   utilities:
     - aspect-ratio
@@ -47,11 +48,16 @@ styles:
     - padding
   blocks:
     - blog
+    - button
     - code
+    - header
 
 # Build settings
 plugins:
   - jekyll-feed
+
+include:
+  - _pages
 
 # Exclude from processing.
 # The following items will not be processed, by default.

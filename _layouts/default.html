@@ -2,34 +2,17 @@
 <html lang="en">
 	{% include head.html %}
   
-  <body>
-		<header>
-			<div class="container-lg flex between pd-b--sm">
-				<div>
-					<h1 class="fs--lg"><a href="/" role="link">{{ site.title }}</a></h1>
-				</div>
-				<nav class="flex gap--md">
-					<a href="/">Home</a>
-					<a href="/blog/">Blog</a>
-				</nav>
-			</div>
-		</header>
+  <body data-transitions="disabled">
+		{% include header.html %}
+
 		<main class="pd-b--3-xl">
-			<div class="container-sm">
+			<div class="container-sm flow">
 				{{ content }}
 			</div>
 		</main>
-    <footer>
-      <div class="container-sm text-center grid gap--md pd-b--md fs--sm">
-				<p>Made by Markus Finell</p>
-				<ul role="list" class="flex center gap--lg">
-					<li><a href="mailto:finell.markus@gmail.com" target="_blank">E-mail</a></li>
-					<li><a href="https://github.com/markusfinell" target="_blank">Github</a></li>
-					<li><a href="https://codepen.io/mfinell" target="_blank">Codepen</a></li>
-					<li><a href="https://linkedin.com/in/markus-finell/" target="_blank">Linkedin</a></li>
-					<li><a href="https://strava.com/athletes/markusfinell" target="_blank">Strava</a></li>
-				</ul>
-			</div>
-    </footer>
+
+    {% include footer.html %}
+
+		<script src="/assets/js/main.js"></script>
   </body>
 </html>

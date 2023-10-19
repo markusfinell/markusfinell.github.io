@@ -15,6 +15,5 @@
     ],
     "theme_color": "#002f6c",
     "background_color": "#002f6c",
-    "start_url": "https://markusfinell.github.io",
     "display": "standalone"
 }

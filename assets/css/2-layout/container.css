@@ -1,6 +1,6 @@
 [class*="container"] {
 	--max-width: 1280px;
-	--width: min(calc(100vw - var(--size--md) * 2), var(--max-width));
+	--width: min(calc(100vw - var(--size--lg) * 2), var(--max-width));
 	margin-inline: auto;
 	width: var(--width);
 }
@@ -10,7 +10,7 @@
 }
 
 .container-lg {
-	--width: calc(100vw - var(--size--md) * 2);
+	--width: calc(100vw - var(--size--lg) * 2);
 }
 
 .container > .stretch {

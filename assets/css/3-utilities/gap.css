@@ -1,3 +1,7 @@
+.gap--xs {
+	gap: var(--size--xs);
+}
+
 .gap--sm {
 	gap: var(--size--sm);
 }

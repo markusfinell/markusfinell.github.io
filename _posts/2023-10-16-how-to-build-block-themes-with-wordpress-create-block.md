@@ -4,7 +4,7 @@ title: "How to build block themes with @wordpress/create-block"
 date: 2023-10-16 07:00:00 +0200
 ---
 
-<strong>The officially supported <a href="https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/" target="_blank">Create Block</a> tool is great for quickly getting up and running with block development for the WordPress block editor. But did you know it can also be used for creating block themes?</strong>
+The officially supported <a href="https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/" target="_blank">Create Block</a> tool is great for quickly getting up and running with block development for the WordPress block editor. But did you know it can also be used for creating block themes?
 
 ## The problem
 
@@ -20,7 +20,7 @@ The Create Block tool is super fast and easily modified to be able to handle muc
 
 First, create a block plugin:
 
-```terminal
+```
 npx @wordpress/create-block@latest my-block-theme
 ```
 
@@ -81,7 +81,7 @@ function my_block_theme_register_blocks() {
 add_action('init', 'my_block_theme_register_blocks');
 ```
 
-If you are using a `view.js` script in a block. Make sure to set the `viewScript` property in `block.json` to: `["file:./view.js", "my-block-theme-my-block-view"]`. This will make sure the script is loaded correctly.
+If you are using a `view.js` script in a block. Make sure to set the `viewScript` property in `block.json` to: `["file:./view.js", "my-block-theme-my-block-view-script"]`. This will make sure the script is loaded correctly.
 
 I am not going to tell you how to structure your CSS and JS. But here is a version of what I usually do:
 

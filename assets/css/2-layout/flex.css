@@ -6,6 +6,14 @@
 	justify-content: space-between;
 }
 
+.flex.items-center {
+	align-items: center;
+}
+
+.flex.content-center {
+	justify-content: center;
+}
+
 .flex.center {
 	align-items: center;
 	justify-content: center;
