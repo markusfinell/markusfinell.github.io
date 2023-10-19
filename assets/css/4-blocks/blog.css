@@ -1,27 +1,3 @@
 .blog__post-title {
 	font-weight: normal;
 }
-
-main a:not([role="link"]) {
-	display: inline-block;
-	line-height: 1;
-	text-decoration: none;
-	position: relative;
-}
-
-main a:not([role="link"]):after {
-	content: '';
-	display: block;
-	position: absolute;
-	left: 0;
-	top: 100%;
-	width: 100%;
-	border-bottom: .075em solid currentColor;
-	transition: var(--transition);
-	pointer-events: none;
-}
-
-main a:not([role="link"]):hover:after {
-	left: .25em;
-	top: calc(100% + .15em);
-}
