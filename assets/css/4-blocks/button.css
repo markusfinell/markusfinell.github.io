@@ -6,7 +6,8 @@ button,
 	color: var(--color--blue);
 	padding: .25em 1em;
 	cursor: pointer;
-	transition: .2s ease-in-out;
+	transition: var(--transition);
+	transition-property: border, background-color, color;
 }
 
 button:hover,
