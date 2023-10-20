@@ -3,7 +3,7 @@
 		"@context": "http://schema.org",
 		"@type": "{{ layout.type }}",
 		"name": "{% if page.layout == "home" %}{{ site.title }}{% else %}{{ page.title }}{% endif %}",
-		"description": "{% if page.layout == "home" %}{{ site.description }}{% else %}{{ page.excerpt | strip_html }}{% endif %}"
+		"description": "{% if page.layout == "home" %}{{ site.description }}{% else %}{{ page.excerpt | strip_html }}{% endif %}",
 		"image": [
 			{% if page.image %}
 				"{{ site.url }}/assets/images/{{ page.image }}"
