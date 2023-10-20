@@ -1,5 +1,9 @@
 <figure class="image">
-	<img src="/assets/images/{{ include.src }}" alt="{{ include.alt }}" />
+	<img 
+		src="/assets/images/{{ include.src }}" 
+		alt="{{ include.alt }}" 
+		{% if include.width %}width="{{ include.width }}"{% endif %}
+		{% if include.height %}height="{{ include.height }}"{% endif %} />
 	{% if include.caption %}
 		<figcaption>{{ include.caption }}</figcaption>
 	{% endif %}
