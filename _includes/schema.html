@@ -1,0 +1,53 @@
+<script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@type": "{{ layout.type }}",
+		"name": "{% if page.layout == "home" %}{{ site.title }}{% else %}{{ page.title }}{% endif %}",
+		"description": "{% if page.layout == "home" %}{{ site.description }}{% else %}{{ page.excerpt | strip_html }}{% endif %}"
+		"image": [
+			{% if page.image %}
+				"{{ site.url }}/assets/images/{{ page.image }}"
+			{% else %}
+				"{{ site.url }}/assets/images/markus-finell.jpg"
+			{% endif %}
+		],
+		"mainEntityOfPage": {
+			"@type": "WebPage",
+			"@id": "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
+		},
+		{% if page.layout == "post" %}
+		"datePublished": "{{ page.date }}",
+		"dateModified": "{% if page.modified %}{{page.modified}}{% else %}{{page.date}}{% endif %}",
+		"isAccessibleForFree": "True",
+		"isPartOf": {
+			"@type": ["CreativeWork", "Product", "Blog"],
+			"name": "{{site.title}}",
+			"productID": "{{site.domain}}"
+		},
+		{% endif %}
+		"author": {
+			"@type": "Person",
+			"name": "Markus Finell",
+			"description": "Markus Finell is a web developer at MarsApril.",
+			"sameAs": "{{ site.url }}/about/",
+			"image": {
+				"@type": "ImageObject",
+				"url": "{{ site.url }}/assets/images/markus-finell.jpg"
+			},
+			"givenName": "Markus",
+			"familyName": "Finell",
+			"publishingPrinciples": "{{ site.url }}/about/"
+		},
+		"publisher": {
+			"@type": "Organization",
+			"name": "Markus Finell",
+			"description": "{{ site.description }}",
+			"sameAs": "{{ site.url }}",
+			"logo": {
+				"@type": "ImageObject",
+				"url": "{{ site.url }}/assets/images/logo.png"
+			},
+			"publishingPrinciples": "{{ site.url }}/about/"
+		}
+	}
+</script>

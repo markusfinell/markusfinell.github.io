@@ -22,13 +22,11 @@ title: Markus Finell
 tagline: Web developer
 email: finell.markus@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Hi! My name is Markus. I have been building websites, plugins and themes with and/or for WordPress for almost 10 years.
+  My name is Markus. I am a web developer at MarsApril. I have been building websites, plugins and themes with and/or for WordPress for almost 10 years.
 domain: markusfinell.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://markusfinell.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /blog/:title/
-
-github_username: markusfinell
 
 styles:
   global:
