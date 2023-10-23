@@ -1,7 +1,9 @@
-<ul class="blog grid gap--lg" role="list">
-	{% for post in site.posts %}
-		<li class="blog__post">
-			<h3 class="blog__post-title fs--md"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-		</li>
-	{% endfor %}
+<div class="blog">
+	<ul class="grid gap--lg" role="list">
+		{% for post in site.posts %}
+			<li class="blog__post">
+				<h3 class="blog__post-title fs--md"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+			</li>
+		{% endfor %}
 	</ul>
+</div>

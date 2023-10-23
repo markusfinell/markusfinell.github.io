@@ -1,3 +1,9 @@
+div.highlighter-rouge {
+	position: relative;
+	width: calc(1.25 * var(--content-width));
+	max-width: 100%;
+}
+
 code {
 	font-family: var(--font--mono);
 	font-size: var(--size--sm);
@@ -21,13 +27,6 @@ pre.highlight {
 	margin: 0;
 	color: var(--color--white);
 	overflow: auto;
-}
-
-div.highlighter-rouge {
-	position: relative;
-	margin-left: 50%;
-	transform: translateX(-50%);
-	width: min(100vw, 125%);
 }
 
 div.highlighter-rouge > button {

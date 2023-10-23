@@ -9,9 +9,9 @@ type: Article
 		{% include header.html %}
 
 		<main class="pd-b--3-xl">
-			<div class="container-sm flow">
+			<article class="{{ page.layout }} container flow">
 				{{ content }}
-			</div>
+			</article>
 		</main>
 
     {% include footer.html %}

@@ -17,11 +17,14 @@ figure img {
 a {
 	display: inline-block;
 	position: relative;
-	transition: color var(--transition);
+	transition: var(--transition);
+	transition-property: color, text-underline-offset;
+	text-underline-offset: 3px;
 }
 
 a:hover {
 	color: var(--color--blue);
+	text-underline-offset: 1px;
 }
 
 [role="link"],

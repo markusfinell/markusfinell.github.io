@@ -1,18 +1,18 @@
-[class*="container"] {
-	--max-width: 1280px;
-	--width: min(calc(100vw - var(--size--lg) * 2), var(--max-width));
+[class*="container"] > * {
+	display: block;
 	margin-inline: auto;
-	width: var(--width);
+	width: calc(100vw - var(--size--lg) * 2);
+	max-width: var(--content-width);
 }
 
-.container-sm {
-	--max-width: 60ch;
+.container--wide > * {
+	max-width: var(--wide-width);
 }
 
-.container-lg {
-	--width: calc(100vw - var(--size--lg) * 2);
+[class*="container"] > .stretch {
+	max-width: var(--wide-width);
 }
 
-.container > .stretch {
-	margin-inline: calc(0px - (100vw - var(--width)) / 2);
+[class*="container"] > .stretch--full {
+	max-width: none;
 }

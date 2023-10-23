@@ -2,10 +2,8 @@
 layout: default
 type: BlogPosting
 ---
-<article class="post flow">
-	<h1 class="post__title">{{ page.title }}</h1>
-	<div class="post__date fs--sm">
-		<time datetime="{{ page.date }}">{{ page.date | date: "%-d %B %Y" }}</time>
-	</div>
-	{{ content }}
-</article>
+<h1 class="post__title">{{ page.title }}</h1>
+<div class="post__date fs--sm">
+	<time datetime="{{ page.date }}">{{ page.date | date: "%-d %B %Y" }}</time>
+</div>
+{{ content }}

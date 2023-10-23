@@ -96,3 +96,10 @@
 :root {
 	--transition: .2s ease-in-out;
 }
+
+/* Wrapper */
+:root {
+  --content-width: 45rem;
+  --wide-width: 90rem;
+  --gutter: var(--size--md);
+}
